@@ -5,7 +5,7 @@ function Movie(props){
 
     function popularity(vote){
         if(vote >= 7.5){
-            return "gold"
+            return "green"
         }else if(vote >= 5){
             return "orange"
         }else {
