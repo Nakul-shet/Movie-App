@@ -63,6 +63,7 @@ function App() {
                 vote_average = {x.vote_average}
                 image = {IMG_PATH + x.poster_path}
                 overview = {x.overview}
+                release = {x.release_date}
               />
             </div>
           );

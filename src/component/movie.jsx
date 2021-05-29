@@ -18,7 +18,11 @@ function Movie(props){
             <div className="movie">
                 <img src={props.image} alt="movie_image"/>
                 <div className="movie-info">
-                    <h1>{props.title}</h1>
+                    <div>
+                        <h1>{props.title}</h1>
+                        <h2 style={{color:"greenyellow"}}>{String(props.release.substr(0,4))}</h2>
+                    </div>
+
                     <span className={popularity(props.vote_average)}>{props.vote_average}</span>
                 </div>
                 <div className="overview">
