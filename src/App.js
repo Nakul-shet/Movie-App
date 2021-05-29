@@ -27,6 +27,7 @@ function App() {
 
     <div className="App">
       <header>
+          <div className={"appname"}>MOVIE APP </div>
             <form id="form">
                 <input               
                 name="searchTerm" 
@@ -52,8 +53,11 @@ function App() {
             </div>
           );
         })}
+          <div className={"footer"}>Copyrighted @Nakul 2021-22</div>
       </main>
     </div>
+
+
   );
 }
 
