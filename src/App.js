@@ -10,10 +10,10 @@ function App() {
  const SEARCH_URl = `https://api.themoviedb.org/3/search/movie?api_key=7c050ad9d485032359d1098e1b0c76ec&query=${query}`;
 
   useEffect(() => {
-    getMovies(SEARCH_URl)
+    gettMovies(SEARCH_URl)
   });
 
-  const getMovies = async (url) => {
+  const gettMovies = async (url) => {
 
     const response = await fetch(url);
 
