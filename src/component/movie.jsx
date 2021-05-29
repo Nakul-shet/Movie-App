@@ -7,7 +7,7 @@ function Movie(props){
         if(vote >= 7.5){
             return "green"
         }else if(vote >= 5){
-            return "orange"
+            return "purple"
         }else {
             return "red"
         }
