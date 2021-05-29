@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body,html{
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top:10vh;
+    left: 0;
+    width: 100vw;
+    padding-bottom: 4vh;
+    background-color: black;
+    padding-right: 2vw;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color : #22254b; 
+    --secondar-color : #373b69
+}
+
+header{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    padding: 10px;
+    padding-right: 2vw;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    background-color: var(--secondar-color);
+}
+
+.search:focus{
+   outline : none;
+}
+
+.movie img {
+    width: 100%;
+    height:auto;
+}
+
+.movie {
+        width: 300px;
+        background-color: var(--secondar-color);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+
+}
+
+.movie-info{
+    color: white;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 2px;
+    font-family: Montserrat,sans-serif ;
+    font-size: small;
+}
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius:2px ;
+    font-weight: bold;
+}
+
+.overview{
+    background-color: white;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    font-family: Montserrat,sans-serif;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+
+input{
+    width: 25vw;
+    height: 5vh;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.appname{
+    font-size: xx-large;
+    font-family: "Montserrat",sans-serif;
+    color: white;
+    padding-left: 2vw;
+}
+
+.green{
+    color: gold;
+    background-color: #22254b;
+    font-size: large;
+}
+
+::-webkit-scrollbar{
+    background: linear-gradient(maroon,saddlebrown);
+    width: 1vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #22254b;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+}
