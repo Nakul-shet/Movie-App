@@ -112,8 +112,19 @@ input{
     padding-left: 2vw;
 }
 
-.green{
+.gold{
     color: gold;
+    background-color: #22254b;
+    font-size: large;
+}
+
+.orange{
+    color: orangered;
+    background-color: #22254b;
+    font-size: large;
+}
+.red{
+    color: red;
     background-color: #22254b;
     font-size: large;
 }
