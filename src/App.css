@@ -1,0 +1,75 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color : #22254b; 
+    --secondar-color : #373b69
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content : flex-end;
+    background-color: var(--secondar-color);
+}
+
+.search:focus{
+   outline : none;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie {
+        width: 300px;
+        background-color: var(--secondar-color);
+        box-shadow: 0 4px 5px rgba((0), 0, 0, 0.2);
+        margin: 10px;
+    
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 80vh;
+}
+
+.movie-info{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 2px;
+    letter-spacing:  0.5px;
+}
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius:2px ;
+    font-weight: bold;
+}
+
+.overview{
+    background-color: white;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+
+
